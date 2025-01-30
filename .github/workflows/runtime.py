@@ -1,0 +1,12 @@
+# Install libraries, required each time
+!pip install eciespy
+!pip install pycryptodomex
+
+# Generate keys
+!python generate_keys.py
+
+# Sign a given message
+!python sign_message.py "Message 1" private_key.pem
+
+# Verify the hex signature provided from the above result
+!python verify_signature.py "Message 1" 743c557c81a0eb66938c53fb42f7b81d844a0d1f8ca27fa41c630700db155fdf4f0bf9b8c6f854c3c83dcfdb2e59f1e15947f22fba6b8a8ffd4721c18f485da5a3a76c0906e30bcfee8694139689ae4cb59019a4b4124d58ac9f674c6851b8902994f5a1686fb98d52374bb9f5951e48a328488444b4cf2fea235f525c80e05276a6286cd17e991c813a06b710fea3466eb25cabc2f6bfeb3906751f3ec54be9966a796c867763ec37e1ab18e1d9724b14a7a1130b65a7b8b2fd247252ed7b959d6eb3c247eaecdcfadc1f1cb4747e8ffa5b4b8a78260aa8ad59c255e3718095cffa99201706287df7f8fae69cc88b3a110d806047bfa3b348de2d92038954e5 public_key.pem
